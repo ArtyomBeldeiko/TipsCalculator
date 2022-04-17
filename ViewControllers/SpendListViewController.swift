@@ -13,7 +13,7 @@ class SpendListViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var spendListTableView: UITableView!
     
     var tipsList: Results<Tips>!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +34,7 @@ class SpendListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tipsList.count
-        }
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
@@ -46,10 +46,9 @@ class SpendListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func backButtonCliked(_ sender: Any) {
+        let appDelegate = AppDelegate()
+        appDelegate.resetApp()
         navigationController?.popToRootViewController(animated: true)
     }
     
-    
-    
-
 }

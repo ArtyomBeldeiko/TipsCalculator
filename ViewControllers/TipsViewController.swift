@@ -25,12 +25,11 @@ class TipsViewController: UIViewController {
         calculateButton.layer.cornerRadius = 12
         savebutton.isHidden = true
         
-        
     }
     
     @IBAction func receiptAmountTextFieldTapped(_ sender: Any) {
         if receiptAmountTextField.text != nil {
-        receiptAmountTextField.text = String(tips!.amountMoney)
+            receiptAmountTextField.text = String(tips!.amountMoney)
         }
     }
     
@@ -86,9 +85,4 @@ class TipsViewController: UIViewController {
         navigationController?.pushViewController(listVC, animated: true)
     }
     
-    
-    
-    
-   
-
 }

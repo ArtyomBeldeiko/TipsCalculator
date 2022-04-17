@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var tipsAmountSegmentedControl: UISegmentedControl!
     @IBOutlet weak var numberOfPayersLabel: UILabel!
     @IBOutlet weak var PayersSlider: UISlider!
@@ -67,6 +67,6 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(tipsVC, animated: true)
     }
     
-
+    
 }
 
