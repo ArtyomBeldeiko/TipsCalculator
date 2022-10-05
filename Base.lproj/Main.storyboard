@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EaB-m4-DLZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LwM-PL-Z4j">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -178,25 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111.2" y="-48.125937031484263"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="g05-ie-qrv">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EaB-m4-DLZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MrS-9q-BCh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ifx-a6-C7a"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OBl-Db-IuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-801" y="-48"/>
+            <point key="canvasLocation" x="586" y="-48"/>
         </scene>
         <!--Tips View Controller-->
         <scene sceneID="P7j-cq-01T">
@@ -307,7 +290,7 @@
                                             <action selector="listButtonClicked:" destination="fYK-Pm-dGl" eventType="touchUpInside" id="3KG-FF-sic"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viQ-az-A9J">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viQ-az-A9J">
                                         <rect key="frame" x="10" y="520" width="355" height="60"/>
                                         <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -377,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOX-eb-IOS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="585" y="-48"/>
+            <point key="canvasLocation" x="1238" y="-48"/>
         </scene>
         <!--Spend List View Controller-->
         <scene sceneID="teH-qo-0MM">
@@ -464,15 +447,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="co6-b0-Whf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1272.8" y="-48.125937031484263"/>
+            <point key="canvasLocation" x="1879" y="-48"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TY5-0I-yRc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LwM-PL-Z4j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V1G-XU-DT7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u53-jB-h1Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQv-4A-XQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111.2" y="-48.125937031484263"/>
         </scene>
     </scenes>
     <resources>
-        <image name="0.circle" catalog="system" width="128" height="121"/>
-        <image name="10.circle" catalog="system" width="128" height="121"/>
+        <image name="0.circle" catalog="system" width="128" height="123"/>
+        <image name="10.circle" catalog="system" width="128" height="123"/>
         <image name="Background" width="1920" height="1200"/>
-        <image name="arrow.backward" catalog="system" width="128" height="98"/>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="list.dash.header.rectangle" catalog="system" width="128" height="93"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -25,7 +25,7 @@ class SpendListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let realm = try! Realm()
         tipsList = realm.objects(Tips.self)
-        
+    
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

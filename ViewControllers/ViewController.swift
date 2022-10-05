@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     var tips = Tips()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +36,6 @@ class ViewController: UIViewController {
         default:
             tips.amountPercents = 5
         }
-        
     }
     
     @IBAction func currencySegmentedControlTapped(_ sender: UISegmentedControl) {
@@ -66,7 +64,5 @@ class ViewController: UIViewController {
         tipsVC.tips = tips
         navigationController?.pushViewController(tipsVC, animated: true)
     }
-    
-    
 }
 

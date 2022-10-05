@@ -15,7 +15,6 @@ class Tips: Object {
     @Persisted var numberOfPayers: Int = 0
     @Persisted var currency: String = ""
     @Persisted var amountMoney: Double = 0
-    
 }
 
 //class RetreiveData: Object {

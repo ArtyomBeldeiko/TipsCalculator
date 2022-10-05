@@ -84,5 +84,4 @@ class TipsViewController: UIViewController {
         let listVC = self.storyboard?.instantiateViewController(withIdentifier: "SpendListViewController") as! SpendListViewController
         navigationController?.pushViewController(listVC, animated: true)
     }
-    
 }
