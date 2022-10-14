@@ -59,10 +59,14 @@ class ViewController: UIViewController {
         tips.numberOfPayers = setValue
     }
     
-    @IBAction func continueBurronClicked(_ sender: Any) {
-        let tipsVC = self.storyboard?.instantiateViewController(withIdentifier: "TipsViewController") as! TipsViewController
-        tipsVC.tips = tips
-        navigationController?.pushViewController(tipsVC, animated: true)
+    @IBAction func continueButtonClicked(_ sender: Any) {
+        if tips.currency != "" {
+            let tipsVC = self.storyboard?.instantiateViewController(withIdentifier: "TipsViewController") as! TipsViewController
+            tipsVC.tips = tips
+            navigationController?.pushViewController(tipsVC, animated: true)
+        } else {
+            AlertController.shared.showAlert(view: self)
+        }
     }
 }
 
