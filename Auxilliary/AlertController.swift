@@ -12,7 +12,10 @@ class AlertController {
     static let shared = AlertController()
     
     func showAlert(view: UIViewController) {
-        let alert = UIAlertController(title: nil, message: "Please, choose currency type.", preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: "", preferredStyle: .alert)
+        let messageAttributes = [NSAttributedString.Key.font: UIFont(name: "Avenir-Heavy", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.black]
+        let messageString = NSAttributedString(string: "Please, choose currency type.", attributes: messageAttributes)
+        alert.setValue(messageString, forKey: "attributedMessage")
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         
