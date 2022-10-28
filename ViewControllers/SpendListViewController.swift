@@ -10,9 +10,10 @@ import RealmSwift
 
 class SpendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var tipsList: Results<Tips>!
+
     @IBOutlet weak var spendListTableView: UITableView!
     
-    var tipsList: Results<Tips>!
     
     override func viewDidLoad() {
         super.viewDidLoad()

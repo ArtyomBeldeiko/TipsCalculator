@@ -9,13 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var tips = Tips()
+    
     @IBOutlet weak var tipsAmountSegmentedControl: UISegmentedControl!
     @IBOutlet weak var numberOfPayersLabel: UILabel!
     @IBOutlet weak var PayersSlider: UISlider!
     @IBOutlet weak var ContinueButton: UIButton!
     @IBOutlet weak var currencySegmentedControl: UISegmentedControl!
     
-    var tips = Tips()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,7 +17,4 @@ class Tips: Object {
     @Persisted var amountMoney: Double = 0
 }
 
-//class RetreiveData: Object {
-//    @Persisted var tipsArray = List<Tips>()
-//}
 
